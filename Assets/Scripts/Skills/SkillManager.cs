@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Unity.Collections;
-using Unity.Entities;
 using UnityEngine;
 
 public class SkillManager : MonoBehaviour
@@ -122,33 +120,5 @@ public class SkillManager : MonoBehaviour
     public SkillSO GetSkillSO(int skillIndex)
     {
         return _skillList[skillIndex].GetSkillSO();
-    }
-
-    private void ChangeEntityDataTest()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            EntityManager entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
-
-            // Entity playerEntity = entityManager.CreateEntityQuery(typeof(Friendly)).GetSingletonEntity();
-            // ShootAttack shootAttackNew = entityManager.GetComponentData<ShootAttack>(playerEntity);
-            // shootAttackNew.damageAmount += 20;
-            // entityManager.SetComponentData<ShootAttack>(playerEntity, shootAttackNew);
-
-            EntityQuery entityQuery = new EntityQueryBuilder(Allocator.Temp).WithAll<ShootAttack>().Build(entityManager);
-            NativeArray<Entity> entityArray = entityQuery.ToEntityArray(Allocator.Temp);
-            NativeArray<ShootAttack> shootAttackarray = entityQuery.ToComponentDataArray<ShootAttack>(Allocator.Temp);
-
-            for (int i = 0; i < shootAttackarray.Length; i++)
-            {
-                ShootAttack shootAttack = shootAttackarray[i];
-                shootAttack.damageAmount += 10;
-                //entityManager.SetComponentData(entityArray[i], shootAttack);
-                shootAttackarray[i] = shootAttack;
-            }
-            entityQuery.CopyFromComponentDataArray(shootAttackarray);
-
-            
-        }
     }
 }

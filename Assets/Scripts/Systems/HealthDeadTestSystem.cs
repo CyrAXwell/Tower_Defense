@@ -1,6 +1,5 @@
 using Unity.Burst;
 using Unity.Entities;
-using UnityEngine;
 
 [UpdateInGroup(typeof(LateSimulationSystemGroup))]
 partial struct HealthDeadTestSystem : ISystem

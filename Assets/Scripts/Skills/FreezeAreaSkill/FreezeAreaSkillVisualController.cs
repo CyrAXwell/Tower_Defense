@@ -41,6 +41,5 @@ public class FreezeAreaSkillVisualController : MonoBehaviour
 
         _circle.Play();
         _snowflakes.Play();
-
     }
 }

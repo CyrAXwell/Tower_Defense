@@ -23,8 +23,6 @@ partial class PlayerDeadTestSystem : SystemBase
             {
                 OnPlayerDeath?.Invoke(this, EventArgs.Empty);
             }
-
         }
     }
-
 }

@@ -1,7 +1,6 @@
 using Unity.Burst;
 using Unity.Entities;
 using Unity.Transforms;
-using UnityEngine;
 
 [UpdateInGroup(typeof(LateSimulationSystemGroup))]
 partial struct ShootLightSpawnerSystem : ISystem
