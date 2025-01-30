@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b8cd07a3e203b4d8af6f363d84c792, type: 3}
+  m_Name: HealingAreaSkillSO
+  m_EditorClassIdentifier: 
+  _name: Healing Area
+  _cooldown: 30
+  _visualGameobject: {fileID: 5369772703169907380, guid: 93dd67984db8d4f4f84d840b08ddcaa7, type: 3}
+  _icon: {fileID: -1571429314, guid: dff72a5d7327e0d4f9ad1bcadfa23a7b, type: 3}
+  _iconColor: {r: 0.38065496, g: 0.8037735, b: 0.4279816, a: 1}
+  _backgroundColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
+  _description: Restores a small amount of health over time.
+  _upgradeDecriptionList:
+  - Type: 2
+    Description: Increases healing power.
+  _upgradeParameterTypeList: 020000000200000002000000020000000200000002000000

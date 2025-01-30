@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b8cd07a3e203b4d8af6f363d84c792, type: 3}
+  m_Name: FreezeAreaSkillSO
+  m_EditorClassIdentifier: 
+  _name: Freeze Area
+  _cooldown: 15
+  _visualGameobject: {fileID: 3654662455804039194, guid: 70c99e59ce4012340b10058bd843ffdf, type: 3}
+  _icon: {fileID: 1273552317, guid: dff72a5d7327e0d4f9ad1bcadfa23a7b, type: 3}
+  _iconColor: {r: 0.44960475, g: 0.48530138, b: 0.81886786, a: 1}
+  _backgroundColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+  _description: Slows enemies in a small radius and deals minor damage over time.
+  _upgradeDecriptionList:
+  - Type: 0
+    Description: Increases the size of the freeze area.
+  - Type: 3
+    Description: Increases freezing power.
+  - Type: 1
+    Description: Increases damage dealt.
+  _upgradeParameterTypeList: 000000000300000001000000000000000300000001000000

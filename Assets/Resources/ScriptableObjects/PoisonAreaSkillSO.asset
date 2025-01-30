@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b8cd07a3e203b4d8af6f363d84c792, type: 3}
+  m_Name: PoisonAreaSkillSO
+  m_EditorClassIdentifier: 
+  _name: Poison Area
+  _cooldown: 15
+  _visualGameobject: {fileID: 2203863044036876397, guid: c28e96330d1d8a04fb011a3569f31a63, type: 3}
+  _icon: {fileID: 1507649883, guid: dff72a5d7327e0d4f9ad1bcadfa23a7b, type: 3}
+  _iconColor: {r: 0.61515963, g: 0.690566, b: 0.26971158, a: 1}
+  _backgroundColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
+  _description: Applies a poison effect in a large radius that deals minor damage
+    over time.
+  _upgradeDecriptionList:
+  - Type: 0
+    Description: Increases the size of the poison area.
+  - Type: 1
+    Description: Increases the size of the poison area.
+  _upgradeParameterTypeList: 000000000100000000000000010000000000000001000000

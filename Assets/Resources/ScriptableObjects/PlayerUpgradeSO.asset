@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b19c5513cb6074caed91d26f01ee9b, type: 3}
+  m_Name: PlayerUpgradeSO
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _iconColor: {r: 0.65882355, g: 0.60784316, b: 0.22745098, a: 1}
+  _backgroundColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
+  _upgradeBulletDamage: 10
+  _upgradeHealth: 500
+  _upgradeBulletSpeed: 6
+  _upgradeFireRate: -0.03
+  _upgradeDecriptionList:
+  - Type: 4
+    Description: Increase bullet damage.
+  - Type: 5
+    Description: Increase health points.
+  - Type: 6
+    Description: Increase fire rate.
+  _upgradeParameterTypeList: 0400000006000000050000000400000006000000050000000400000006000000050000000400000006000000050000000500000005000000050000000500000005000000050000000500000005000000
