@@ -6,12 +6,12 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private Button _palyButton;
     [SerializeField] private Button _quitGameButton;
 
-    private void Start()
+    public void Initialize()
     {
         Show();
         
         _palyButton.onClick.AddListener(() => { OnPlayButton(); });  
-        _quitGameButton.onClick.AddListener(() => { Application.Quit(); });  
+        _quitGameButton.onClick.AddListener(() => { Application.Quit(); }); 
     }
 
     public void Show()

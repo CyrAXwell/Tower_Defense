@@ -14,10 +14,10 @@ public class LevelUpMenuUI : MonoBehaviour
     private SkillUpgradeButtonUI[] _buttons;
     private PlayerUpgradeButtonUI _playerUpgradeButton;
 
-    private void Start()
-    {
-        _levelUpMenuPanel.SetActive(false);
-    }
+    // private void Start()
+    // {
+    //     _levelUpMenuPanel.SetActive(false);
+    // }
 
     public void ShowLevelUpMenu(Dictionary<UpgradeType, ISkill> skillDictionary)
     {

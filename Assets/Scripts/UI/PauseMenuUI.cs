@@ -9,13 +9,10 @@ public class PauseMenuUI : MonoBehaviour
     [SerializeField] private Button _retryGameButton;
     [SerializeField] private Button _quiteGameButton;
 
-    private void Start()
+    public void Initialize()
     {
-        Hide();
-
         GameManager.Instance.OnPauseGame += OnPauseGame;
         GameManager.Instance.OnUnpauseGame += OnUnpauseGame;
-
         
         _resumeGameButton.onClick.AddListener(() => { GameManager.Instance.TogglePauseGame(); });
         _retryGameButton.onClick.AddListener(() => { SceneManager.LoadSceneAsync(1, LoadSceneMode.Single); });

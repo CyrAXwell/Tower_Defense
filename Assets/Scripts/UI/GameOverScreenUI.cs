@@ -12,19 +12,14 @@ public class GameOverScreenUI : MonoBehaviour
     [SerializeField] private TMP_Text _gameResult;
     [SerializeField] private TMP_Text _titleText;
 
-    private void Awake()
+    public void Initialize()
     {
         GameManager.Instance.OnGameLose += OnGameLose;
         GameManager.Instance.OnGameWin += OnGameWin;
 
-        Hide();
-    }
-
-    private void Start()
-    {
         _playAgainButton.onClick.AddListener(() => { OnMainmenuButton(); });  
         _quitGameButton.onClick.AddListener(() => { Application.Quit(); });  
-        _endlessGameButton.onClick.AddListener(() => { GameManager.Instance.OnPressEndlessWaveButton(); Hide(); });  
+        _endlessGameButton.onClick.AddListener(() => { GameManager.Instance.OnPressEndlessWaveButton(); Hide(); }); 
     }
 
     private void OnGameLose(object sender, EventArgs e)
